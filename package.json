@@ -1,0 +1,22 @@
+{
+  "name": "cousre-code",
+  "version": "1.0.0",
+  "description": "This is for learning ReactJs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aman0786-git/React-Course.git"
+  },
+  "author": "Aman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aman0786-git/React-Course/issues"
+  },
+  "homepage": "https://github.com/Aman0786-git/React-Course#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
