@@ -51,6 +51,8 @@ const Heading2 = () => (
 
 // We can remove return keyword and it wprks the same
 //This is React Component
+// Composing Component -> passing component as a porps to other component
+
 const HeaderComponent = () => (
   <div>
     {/*When It is React Component -> <ComponentName /> OR ComponentName()*/}
