@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import "../index.css";
+// import "../index.css";
 const SearchBar = () => (
   <input type="search" className="searchBar" placeholder="Search..."></input>
 );
