@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "../index.css";
-import Header,{Title} from "./components/Header";
+import Header from "./components/Header";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
-import IMG_CDN_URL from "./config";
+import AboutUs from "./components/About";
+import Error from "./components/Error";
+import { createBrowserRouter,RouterProvider } from "react-router-dom";
+
+
 //default Export
 // import Header from "./components/Header"
 //Named Import
@@ -45,5 +49,19 @@ const AppLayout = () => {
   );
 };
 
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element : <AppLayout />,
+    errorElement:<Error/>
+  },
+  {
+    path: "/about",
+    element : <AboutUs />
+  }
+]);
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+root.render(<RouterProvider router={appRouter}/>);
