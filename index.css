@@ -29,6 +29,19 @@ body {
   color: #4df171;
 }
 
+.nav-items > ul > li > .login-btn,.logout-btn {
+  background-color: #4df171;
+  scale: 1.1;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #131212;
+  cursor: pointer;
+}
+.nav-items > ul > li > .login-btn:hover,.logout-btn:hover{
+  background-color: rgba(14, 13, 13, 0.856);
+  color: #4df171;
+}
 .logo {
   width: 4em;
 }
@@ -103,7 +116,7 @@ body {
   height: 2rem;
   width: 5%;
   margin-left: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.753);
+ border: none;
   border-radius: 20px;
   background-color: #4df171;
   cursor: pointer;

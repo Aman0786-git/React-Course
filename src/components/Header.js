@@ -1,27 +1,46 @@
+import React, { useState } from "react";
+import Logo from "../assets/img/logo.jpg"
+const loggedIn =()=>{
+  // check if user is logged in
+  return false;
+}
 
- const Title = () => (
-    <a href="/">
-      <img
-        className="logo"
-        alt="logo"
-        src="https://media.istockphoto.com/id/1038356020/vector/restaurant-icon.jpg?s=612x612&w=0&k=20&c=Tk_v3JuJA4lz_8ZRJi78xS4p75Idqt97uEtYJciVtFI="
-      />
-    </a>
-  );
+const Title = () => (
+  <a href="/">
+    <img
+      className="logo"
+      alt="logo"
+      src={Logo}
+    />
+  </a>
+);
 
-const Header = () => (
+const Header = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+
+  return (
+
     <div className="header">
-      <Title />
-  
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact</li>
-          <li>Cart</li>
-        </ul>
-      </div>
+    <Title />
+
+    <div className="nav-items">
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>Cart</li>
+      <li>
+        {
+          isLoggedIn ?
+          (<button className="logout-btn" onClick={()=>setIsLoggedIn(false)}>Logout</button>):
+          (<button className="login-btn" onClick={()=>setIsLoggedIn(true)}>Login</button>)
+          
+        }
+        </li>
+      </ul>
     </div>
-  );
-  
-  export default Header;
+  </div>
+);
+}
+export default Header;

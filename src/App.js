@@ -31,7 +31,8 @@ import IMG_CDN_URL from "./config";
 
 */
 
-
+// never create component inside component 
+// never create useState inside if else or for loop or outside functional component
 const AppLayout = () => {
   return (
     // <React.Fragment>
