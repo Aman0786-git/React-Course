@@ -1,33 +1,71 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { restaurantList } from "../config";
 import RestrauntCard from "./RestaurantCard";
+import Shimmer from "./shimmer";
+
 
 //What is state?
 //State is a data that can be changed over time and can be used in our application.
 
 //What is Hook?
-//Hook is a function that allows us to use state in functional components without using class components and lifecycle methods.
+//==> Hook is a function that allows us to use state in functional components without using class components and lifecycle methods.  
 
 //What is useState()?
-//useState is a hook that allows us to use state in functional components  and it returns an array with two values. The first value is the state and the second value is a function that allows us to change the state.
+//==> useState() is a hook that allows us to use state in functional components  and it returns an array with two values. The first value is the state and the second value is a function that allows us to change the state.
+
 //Why do we need state variable?
-//We need state variable to store the data that can be changed over time and can be used in our application.
+//==> We need state variable to store the data that can be changed over time and can be used in our application.
+
+//What is useEffect()?
+//==> useEffect() is a hook that allows us to use lifecycle methods in functional components. It takes two arguments, the first argument is a function that will be executed when the component is mounted and the second argument is an array of dependencies. If the array of dependencies is empty, the function will be executed only once when the component is mounted. If the array of dependencies is not empty, the function will be executed when the component is mounted and when any of the dependencies is changed.  
 
 function filterData(searchText,restaurants){
 
-  return searchText==""?restaurantList:restaurants.filter((restaurant)=>restaurant.data.name.toLowerCase().includes(searchText.toLowerCase()));
+  return searchText==""?restaurants:restaurants.filter((restaurant)=>restaurant.data.name.toLowerCase().includes(searchText.toLowerCase()));
   // return filteredData;
 }
 
-const Body = () => {
-  //Local Variable in JS
-  const searchtxt = "KFC";
-  // Local Variable in React
-  const [searchText, setSearchText] = useState("KFC"); //returns -> [variableName, functionToChangeVariable]
-  const [restaurants,setRestaurants] = useState(restaurantList);
 
-  return (
+
+const Body = () => {
+  const [allRestaurants,setallRestaurants] = useState([]); 
+  const [filteredRestaurants,setFilteredRestaurants] = useState([]);
+  // Local Variable in React
+  const [searchText, setSearchText] = useState(); //returns -> [variableName, functionToChangeVariable]
+
+  /*  useEffect(()=>{},[]) // [] -> dependency array -> if empty, it will run only once
+   useEffect(()=>{},[searchText]) // if searchText changes, it will run again
+   useEffect(()=>{},[searchText,restaurants]) // if searchText or restaurants changes, it will run again  
+  */
+
+  useEffect(()=>{
+    // console.log("useEffect called");
+    // API Call
+    getRestaurants()
+  },[]);
+
+  async function getRestaurants(){
+    const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.5830002&lng=88.3372909&page_type=DESKTOP_WEB_LISTING");
+    const json = await data.json();
+    console.log(json);
+    setallRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards); 
+    
+  }
+
+  console.log("render");
+  /*
+    render will be called before useEffect callback function
+    it will be called everytime the state is changed
+  */
+
+ // Conditional Rendering
+  // if restaurant.length is 0 show shimmer effect
+
+  return (allRestaurants.length===0 )? <Shimmer/> : (
+    
     <>
+      {/* <SearchBar/> */}
       <div className="search-container">
         <input
           type="search"
@@ -40,19 +78,21 @@ const Body = () => {
           ()=>{
             // need to filter the data
             console.log(searchText)
-            const Data = filterData(searchText,restaurants)
+            const Data = filterData(searchText,allRestaurants)
             //update the state - restaurants
-            console.log(Data);
-            setRestaurants(Data);
+            setFilteredRestaurants(Data);
           }
         } >Search</button>
-      </div>
+    </div>
       <div className="restraunt-list">
-        {restaurants.map((restaurant) => {
+        { 
+          (filteredRestaurants.length===0)?<h1>No Restaurants Found</h1>:
+          filteredRestaurants.map((restaurant) => {
           return (
             <RestrauntCard {...restaurant.data} key={restaurant.data.id} />
           );
-        })}
+        })
+        }
       </div>
     </>
   );

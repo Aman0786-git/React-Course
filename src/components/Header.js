@@ -1,3 +1,4 @@
+
  const Title = () => (
     <a href="/">
       <img
@@ -11,6 +12,7 @@
 const Header = () => (
     <div className="header">
       <Title />
+  
       <div className="nav-items">
         <ul>
           <li>Home</li>
