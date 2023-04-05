@@ -25,7 +25,14 @@ body {
   margin: 10px;
   cursor: pointer;
 }
-.nav-items > ul > li:hover{
+.nav-items > ul > li > a {
+  text-decoration: none;
+  color: #131212;
+}
+.nav-items > ul > li:hover,a:hover{
+  color: #4df171;
+}
+.nav-items > ul > li>a:hover{
   color: #4df171;
 }
 
@@ -89,7 +96,7 @@ body {
 }
 .restraunt-list{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   /* justify-content: center; */
   align-items: center;
   flex-wrap: wrap;
