@@ -6,7 +6,9 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import AboutUs from "./components/About";
 import Error from "./components/Error";
-import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import Contact from "./components/contact";
+import RestrauntMenu from "./components/RestaurantMenu";
+import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
 
 
 //default Export
@@ -42,7 +44,8 @@ const AppLayout = () => {
     // <React.Fragment>
       <>
       <Header />
-      <Body />
+      {/* {Outlet} */}
+      <Outlet/>
       <Footer />
       </>
     // </React.Fragment>
@@ -54,12 +57,27 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element : <AppLayout />,
-    errorElement:<Error/>
+    errorElement:<Error/>,
+    children:[
+      {
+        path: "/",
+        element : <Body />
+      },
+      {
+        path: "/about",
+        element : <AboutUs />
+      },
+      {
+        path :"/contact",
+        element : <Contact />
+      },
+      {
+        path:"/restaurant/:id",
+        element : <RestrauntMenu />
+      }
+    ]
   },
-  {
-    path: "/about",
-    element : <AboutUs />
-  }
+  
 ]);
 
 

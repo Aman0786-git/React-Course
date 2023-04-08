@@ -154,7 +154,6 @@ body {
   justify-content: space-around;
 }
 
-
 .shimmer .image-card .image{
   height: 60%;
   width: 80%;
@@ -195,6 +194,47 @@ body {
   to {
     background-position: 1000px 0;
   }
+}
+.menuContainer{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.resInfo{
+  width: 80%;
+  height: 30%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu_Card{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+  width: 60vw;
+  height: 300px;
+  outline: 1px solid black;
+  margin: 10px;
+}
+
+.menu_list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.menu_Card > img{
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .footer{

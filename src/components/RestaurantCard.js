@@ -1,7 +1,7 @@
 import { IMG_CDN_URL } from "../config";
 
 //Optional Chaining
-const RestrauntCard = ({name,cuisines,avgRating,cloudinaryImageId}) => {
+const RestaurantCard = ({name,cuisines,avgRating,cloudinaryImageId}) => {
     return (
       
       <div className="card">
@@ -12,4 +12,4 @@ const RestrauntCard = ({name,cuisines,avgRating,cloudinaryImageId}) => {
       </div>
     );
   };
-export default RestrauntCard;
+export default RestaurantCard;

@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
 import { restaurantList } from "../config";
-import RestrauntCard from "./RestaurantCard";
+import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./shimmer";
 
 
@@ -91,7 +91,7 @@ const Body = () => {
           (filteredRestaurants.length===0)?<h1>No Restaurants Found</h1>:
           filteredRestaurants.map((restaurant) => {
           return (
-            <RestrauntCard {...restaurant.data} key={restaurant.data.id} />
+            <RestaurantCard {...restaurant.data} key={restaurant.data.id} />
           );
         })
         }
