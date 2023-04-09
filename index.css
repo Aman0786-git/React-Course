@@ -56,35 +56,34 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   width: 250px;
   height: 350px;
-  border-radius: 20px;
   margin: 10px;
   text-align: center;
-  padding: 10px 10px;
-  border: 1px solid #80e780;
-  background-color: #98fb98be;
-  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.349));
+  padding: 10px;
+  background-color: #cde0cdad;
+  color: #262c26;
+  box-shadow:5px 5px 10px 0px rgb(207, 204, 205);
 
 }
 
 .card > img {
-  object-fit: scale-down;
+  object-fit: cover;
   width: 80%;
   height: 60%;
-  /* border-radius: 6%; */
+  border-radius: 20px;
   filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.349));
+  /* box-shadow:5px 5px 10px 0px rgb(156, 156, 156); */
 }
 
 .card > h5{
   width: 80%;
   margin-top: 10px;
-  padding: 1px 8px;
-  border: 1px solid #262c26;
+  padding: 3px 8px;
   border-radius: 20px;
-  background-color: #5d995dbe;
+  background-color: #4df171;
   color: #131212;
   display: inline-block;
   width: fit-content;
@@ -103,7 +102,10 @@ body {
   height: 100%;
   margin: 10px;
 }
-
+.restraunt-list > a{
+  text-decoration: none;
+  color: #131212;
+}
 .search-container{
   display: flex;
   justify-content: center;
@@ -198,29 +200,45 @@ body {
 .menuContainer{
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
 }
-
+.resLink{
+  text-decoration: none;
+  color: #131212;
+}
 .resInfo{
+  background-color: #cde0cdad;
   width: 80%;
   height: 30%;
-  border: 2px solid black;
+  padding: 10px;
+  border: 1px solid #929492;
+  /* display: flex; */
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content:space-around;
   align-items: center;
-}
 
+}
+.resRating{
+  padding: 1px 8px;
+  border-radius: 10px;
+  background-color: #4df171;
+  color: #131212;
+  display: inline-block;
+  width: fit-content;
+  text-align: center;
+}
 .menu_Card{
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-around;
   align-items: center;
   width: 60vw;
   height: 300px;
-  outline: 1px solid black;
-  margin: 10px;
+  border-radius: 20px;
+  margin: 10px 0;
+  background-color: #cde0cdad;
+  color: #262c26;
+  box-shadow:5px 5px 10px 0px rgb(207, 204, 205);
 }
 
 .menu_list{
@@ -228,13 +246,15 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  
+  margin: 5px;
 }
 
 .menu_Card > img{
   height: 80%;
   object-fit: cover;
   border-radius: 20px;
+  box-shadow:5px 5px 10px 0px rgb(156, 156, 156);
+
 }
 
 .footer{

@@ -6,7 +6,7 @@ import MenuCard from "./MenuCard";
 
 const RestrauntMenu = () => {
     //  how to read a dynamic URL parameter/id
-    const {id:resId} = useParams();
+    const {id} = useParams();
     const [restaurant, setRestaurant] = useState({});
     const [menu,setMenu]= useState({});
     
@@ -16,35 +16,24 @@ const RestrauntMenu = () => {
 
     
     async function getRestaurantInfo(){
-        const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.5830002&lng=88.3372909&restaurantId=133488&submitAction=ENTER")
+        
+        const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.5830002&lng=88.3372909&restaurantId="+id +"&submitAction=ENTER")
         const {data:jsonData} = await data.json();
         setRestaurant(jsonData.cards[0].card.card.info);
         setMenu(jsonData.cards[2].groupedCard.cardGroupMap.REGULAR.cards)
         
     }
     // console.log("Menu",menu)
-
-const filterMenu = (menu,veg) => 
-    {   
-    return  menu.length===undefined?<h1>Loading</h1>:menu.filter((item)=>{
-            const cardItem = item?.card?.card?.itemCards;
-            // console.log(cardItem.size)
-           return cardItem?.map((e)=>{
-            const {isVeg}= e?.card?.info;
-            if(isVeg==veg)return e;
-})
-        
-})
-
-}
-
-
+    console.log(restaurant)
     return (
-        <div className="menuContainer">
+        <div className="menuContainer" key={restaurant.id}>
             <div className="resInfo">
-                <h2 className="resName">{restaurant.name}</h2>
-                <h3 className="resCity">{restaurant.city}</h3>
-                
+                <h2 className="resName">{restaurant.name},{restaurant.city}</h2>
+                <h5>{restaurant?.feeDetails?.message}</h5>
+                <div className="resRating">
+                    <h4>{restaurant.avgRating}⭐</h4>
+                    <h5>{restaurant.totalRatingsString}</h5>
+                </div>
             </div>
             
             <div className="menuList">
@@ -52,11 +41,9 @@ const filterMenu = (menu,veg) =>
                     (menu.length===undefined?<h1>Loading...</h1>:menu.map((item)=>{
                         const cardItem = item?.card?.card?.itemCards;
                         return cardItem?.map((e)=>{
-                        
                         const cardInfo = e?.card?.info;
-                        const {isVeg} = cardInfo;
                         // console.log(cardInfo)
-                        // console.log(...[cardInfo])
+                        console.log(...[cardInfo])
                         return( <MenuCard {...cardInfo }/>)
                        })
                         
@@ -66,5 +53,5 @@ const filterMenu = (menu,veg) =>
             </div>
         </div>
     )
-}
+  }
 export default RestrauntMenu;
