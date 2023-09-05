@@ -13,7 +13,7 @@ class AboutUs extends Component {
     // Best place to make API Call
     console.log("Parent- componentDidMount")
   }
-
+  
   render() {
     console.log("parent-render")
     return (
@@ -30,14 +30,14 @@ class AboutUs extends Component {
 /* 
 Parent-Constructor
 Parent-render
-    First Child - Constructor
-    First Child - render
-        Second Child - Constructor
-        Second Child - render
-    First Child - componentDidmount
-        Second Child - componentDidmount
-Parent - componentDidMount
+   Child- Constructor 
+   Child- Render
 
+   DOM is updated
+   json is logged in console
+   Child componentDidMount
+
+Parent - componentDidMount
 */
 
 export default AboutUs;
