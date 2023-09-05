@@ -21,16 +21,26 @@ class Profile extends React.Component{
         const json = await data.json();
         // console.log(json)
         this.setState({
-            userInfo:json,
+            userInfo:json, 
         })
         console.log("Child- Component Did Mount"+this.props.name);
     }
+
+    
+  componentDidUpdate(){
+    console.log("Component Did Update");
+  }
+
+  componentWillUnmount(){
+    console.log("Component Will Unmount");
+
+  }
 
     // render method is the most important part of Class Based Component
     render(){
         const {count}=this.state;
         console.log("Child -Render"+this.props.name)
-        console.log(this.state.userInfo)
+        // console.log(this.state.userInfo)
         return(
         <div>
             <h2>Profile Class Component</h2>
@@ -44,3 +54,15 @@ class Profile extends React.Component{
 }
 
 export default Profile;
+
+/* 
+Child -ConstructorFirst Child
+Child -RenderFirst Child
+Child- Component Did MountFirst Child
+  
+API Call is made
+Set State
+
+<Update Cycle>
+render
+*/
