@@ -22,8 +22,8 @@ import { Link } from "react-router-dom";
 
 
 function filterData(searchText,restaurants){
-
-  return searchText==""?restaurants:restaurants.filter((restaurant)=>restaurant.data.name.toLowerCase().includes(searchText.toLowerCase()));
+  console.log(restaurants);
+  return searchText==""?restaurants:restaurants.filter((restaurant)=>restaurant.info.name.toLowerCase().includes(searchText.toLowerCase()));
   // return filteredData;
 }
 
@@ -33,7 +33,7 @@ const Body = () => {
   const [allRestaurants,setallRestaurants] = useState([]); 
   const [filteredRestaurants,setFilteredRestaurants] = useState([]);
   // Local Variable in React
-  const [searchText, setSearchText] = useState(); //returns -> [variableName, functionToChangeVariable]
+  const [searchText, setSearchText] = useState(''); //returns -> [variableName, functionToChangeVariable]
 
   /*  useEffect(()=>{},[]) // [] -> dependency array -> if empty, it will run only once
    useEffect(()=>{},[searchText]) // if searchText changes, it will run again
@@ -41,7 +41,6 @@ const Body = () => {
   */
 
   useEffect(()=>{
-    // console.log("useEffect called");
     // API Call
     getRestaurants()
   },[]);
@@ -49,9 +48,12 @@ const Body = () => {
   async function getRestaurants(){
     const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.5830002&lng=88.3372909&page_type=DESKTOP_WEB_LISTING");
     const json = await data.json();
-    // console.log(json);
-    setallRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards); 
+    // console.log(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants);
+    // setallRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants);
+    // setFilteredRestaurants(json?.data?.cards[1].card.card.gridElements.infoWithStyle.info);
+    // console.log(...restaurantList)
+    setallRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants);
+    setFilteredRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants); 
     
   }
 
@@ -91,9 +93,10 @@ const Body = () => {
         { 
           (filteredRestaurants.length===0)?<h1>No Restaurants Found</h1>:
           filteredRestaurants.map((restaurant) => {
-          return (
-            <Link to={"/restaurant/"+restaurant.data.id } key={restaurant.data.id} >
-            <RestaurantCard {...restaurant.data}  />
+            // console.log(restaurant);
+          return (  
+            <Link to={"/restaurant/"+restaurant.info.id } key={restaurant.info.id} >
+            <RestaurantCard {...restaurant.info}  />
             </Link>
           );
         })
