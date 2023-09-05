@@ -20,6 +20,7 @@ const RestrauntMenu = () => {
         "&submitAction=ENTER"
     );
     const { data: jsonData } = await data.json();
+      console.log(jsonData.cards[0].card.card.info)
     setRestaurant(jsonData.cards[0].card.card.info);
     setMenu(jsonData.cards[2].groupedCard.cardGroupMap.REGULAR.cards);
   }
@@ -46,7 +47,7 @@ const RestrauntMenu = () => {
             const cardItem = item?.card?.card?.itemCards ;
             return cardItem?.map((e) => {
               const cardInfo = e?.card?.info;
-              // console.log(cardInfo)
+              console.log(cardInfo)
               console.log(...[cardInfo]);
               return <MenuCard {...cardInfo} />;
             });
