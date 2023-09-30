@@ -3,7 +3,7 @@ import { restaurantList } from "../config";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
-
+import {filterData} from "../utils/helper";
 
 //What is state?
 //State is a data that can be changed over time and can be used in our application.
@@ -20,12 +20,6 @@ import { Link } from "react-router-dom";
 //What is useEffect()?
 //==> useEffect() is a hook that allows us to use lifecycle methods in functional components. It takes two arguments, the first argument is a function that will be executed when the component is mounted and the second argument is an array of dependencies. If the array of dependencies is empty, the function will be executed only once when the component is mounted. If the array of dependencies is not empty, the function will be executed when the component is mounted and when any of the dependencies is changed.  
 
-
-function filterData(searchText,restaurants){
-  console.log(restaurants);
-  return searchText==""?restaurants:restaurants.filter((restaurant)=>restaurant.info.name.toLowerCase().includes(searchText.toLowerCase()));
-  // return filteredData;
-}
 
 
 
