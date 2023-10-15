@@ -45,9 +45,10 @@ const Body = () => {
     // console.log(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants);
     // setallRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants);
     // setFilteredRestaurants(json?.data?.cards[1].card.card.gridElements.infoWithStyle.info);
-    // console.log(...restaurantList)
-    setallRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants);
-    setFilteredRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants); 
+    
+    setallRestaurants(json?.data?.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+    setFilteredRestaurants(json?.data?.cards[4].card.card.gridElements.infoWithStyle.restaurants); 
+    
     
   }
 
