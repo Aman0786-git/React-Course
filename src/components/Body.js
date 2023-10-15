@@ -4,6 +4,7 @@ import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
 import {filterData} from "../utils/helper";
+import useOnline from "../utils/useOnline";
 
 //What is state?
 //State is a data that can be changed over time and can be used in our application.
@@ -58,6 +59,8 @@ const Body = () => {
     it will be called everytime the state is changed
   */
 
+  const online=useOnline();
+  if(!online)return <h1>You're Offline.Please check your internet connection</h1>;
     //Not render component 
     if(!allRestaurants)return null;
  // Conditional Rendering
