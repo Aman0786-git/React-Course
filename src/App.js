@@ -1,4 +1,4 @@
-import React from "react";
+import React,{lazy, Suspense} from "react";
 import ReactDOM from "react-dom/client";
 import "../index.css";
 import Header from "./components/Header";
@@ -11,7 +11,13 @@ import RestrauntMenu from "./components/RestaurantMenu";
 // import Profile from "./components/Profile";
 import Profile from "./components/ProfileClass";
 import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
+import Shimmer from "./components/shimmer";
+// import Instamart from "./components/Instamart";
 
+//Lazy Load or Chunking or Dynamic Import
+const Instamart = lazy(()=>import("./components/Instamart"));
+// upon on demand loading -> upon render -> react suspends loading 
+// we use suspense to show fallback component until the component is loaded 
 
 //default Export
 // import Header from "./components/Header"
@@ -38,6 +44,13 @@ import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
         |-> Links
 
 */
+
+// Chunking -> Code Splitting -> Lazy Loading -> Dynamic Import 
+// What is Chunking? -> Divide the code into small chunks and load only when required 
+// Why Chunking? -> To improve the performance of the application
+// How Chunking? -> Dynamic Import
+// What is dynamic import? -> import the module when required 
+
 
 // never create component inside component 
 // never create useState inside if else or for loop or outside functional component
@@ -82,6 +95,12 @@ const appRouter = createBrowserRouter([
       {
         path:"/restaurant/:id",
         element : <RestrauntMenu />
+      },
+      {
+        path:"/instamart",
+        element :<Suspense fallback={<Shimmer />}> 
+                  <Instamart />
+                </Suspense> 
       }
     ]
   },
