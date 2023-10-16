@@ -47,8 +47,8 @@ const Body = () => {
     // setallRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants);
     // setFilteredRestaurants(json?.data?.cards[1].card.card.gridElements.infoWithStyle.info);
     
-    setallRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants);
-    setFilteredRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants); 
+    setallRestaurants(json?.data?.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+    setFilteredRestaurants(json?.data?.cards[4].card.card.gridElements.infoWithStyle.restaurants); 
     
     
   }
@@ -69,25 +69,25 @@ const Body = () => {
   return (allRestaurants.length===0 )? <Shimmer/> : (
     
     <>
-      <div className="search-container">
+      <div className="search-container m-4 flex justify-center content-center">
         <input
           type="search"
           placeholder="Search..."
-          className="search-input"
+          className="search-input px-5 border-2 border-green-300 rounded-3xl focus:outline-green-400"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
-        <button className="search-btn" onClick={
+        <button className="search-btn m-2 px-3 py-0.5 w-xl rounded-full border-2 border-green-400 bg-green-300" onClick={
           ()=>{
             // need to filter the data
-            console.log(searchText)
+            // console.log(searchText)
             const Data = filterData(searchText,allRestaurants)
             //update the state - restaurants
             setFilteredRestaurants(Data);
           }
         } >Search</button>
     </div>
-      <div className="restraunt-list">
+      <div className="restraunt-list flex flex-wrap justify-around  p-1 items-center bg-green-200">
         { 
           (filteredRestaurants.length===0)?<h1>No Restaurants Found</h1>:
           filteredRestaurants.map((restaurant) => {

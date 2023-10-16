@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 // Client Side Routing
 
 const Title = () => (
-  <a href="/">
-    <img className="logo" alt="logo" src={Logo} />
+  <a href="/" className="bg-green-400">
+    <img className="h-12" alt="logo" src={Logo} />
   </a>
 );
 
@@ -16,27 +16,29 @@ const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-    <div className="header">
+    <div className="flex justify-between bg-green-400">
       <Title />
-      <div className="nav-items">
-        <ul>
-          <li>
+      <div className="">
+        <ul className="flex m-1 content-center">
+          <li className="m-2 hover:text-white ">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="m-2 hover:text-white">
             <Link to="/about">About Us</Link>
           </li>
-          <li>
+          <li className="m-2 hover:text-white">
             <Link to="/contact">Contact</Link>
           </li>
-          <li>
+          <li className="m-2 hover:text-white">
             <Link to="/cart">Cart</Link>
           </li>
-          <li>
+          <li className="m-2 hover:text-white">
             <Link to="/instamart">Instamart</Link>
           </li>
           
-          <li>
+        </ul>
+      </div>
+          <h1 className="m-3 hover:text-white">
             {isLoggedIn ? (
               <button
                 className="logout-btn"
@@ -49,9 +51,7 @@ const Header = () => {
                 Login
               </button>
             )}
-          </li>
-        </ul>
-      </div>
+          </h1>
     </div>
   );
 };
