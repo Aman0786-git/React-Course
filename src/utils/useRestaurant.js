@@ -19,7 +19,10 @@ import { RES_URL } from "../config";
         
         console.log(jsonData)
         setRestaurant(jsonData.cards[0].card.card.info);
-        setMenu(jsonData.cards[2].groupedCard.cardGroupMap.REGULAR.cards);
+        // console.log(jsonData.cards[2].groupedCard);
+        if(jsonData?.cards[2]?.groupedCard?.cardGroupMap)setMenu(jsonData.cards[2].groupedCard.cardGroupMap.REGULAR.cards);
+        else
+        setMenu(jsonData.cards[3].groupedCard.cardGroupMap.REGULAR.cards)
 
       }
       // console.log(restaurant)

@@ -35,19 +35,19 @@ const RestrauntMenu = () => {
 //   console.log(restaurant);
   return (
 
-    <div className="menuContainer" key={restaurant.id}>
-      <div className="resInfo">
-        <h2 className="resName">
+    <div className="menuContainer flex flex-wrap justify-center" key={restaurant.id}>
+      <div className="resInfo my-2 py-2 bg-green-200 w-full text-center">
+        <h2 className="resName font-bold text-lg">
           {restaurant?.name},{restaurant?.city}
         </h2>
-        <h5>{restaurant?.feeDetails?.message}</h5>
-        <div className="resRating">
+        <h5 className="font-semibold">{restaurant?.feeDetails?.message}</h5>
+        <div className="resRating font-semibold">
           <h4>{restaurant?.avgRating}⭐</h4>
           <h5>{restaurant?.totalRatingsString}</h5>
         </div>
       </div>
 
-      <div className="menuList">
+      <div className="menuList flex justify-evenly flex-wrap">
         {menu.length === undefined ? 
           <h1>Loading...</h1>
         : (
