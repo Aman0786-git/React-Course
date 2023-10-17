@@ -47,8 +47,8 @@ const Body = () => {
     // setallRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants);
     // setFilteredRestaurants(json?.data?.cards[1].card.card.gridElements.infoWithStyle.info);
     
-    setallRestaurants(json?.data?.cards[4].card.card.gridElements.infoWithStyle.restaurants);
-    setFilteredRestaurants(json?.data?.cards[4].card.card.gridElements.infoWithStyle.restaurants); 
+    setallRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants);
+    setFilteredRestaurants(json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants); 
     
     
   }
@@ -69,11 +69,11 @@ const Body = () => {
   return (allRestaurants.length===0 )? <Shimmer/> : (
     
     <>
-      <div className="search-container m-4 flex justify-center content-center">
+      <div className="search-container m-4 flex justify-start sm:justify-center md:justify-center md:content-center">
         <input
           type="search"
           placeholder="Search..."
-          className="search-input px-5 border-2 border-green-300 rounded-3xl focus:outline-green-400"
+          className="search-input py-1 md:py-0 lg:py-0 px-3 sm:px-5 border-2 border-green-300 rounded-3xl focus:outline-green-400"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
@@ -87,7 +87,7 @@ const Body = () => {
           }
         } >Search</button>
     </div>
-      <div className="restraunt-list flex flex-wrap justify-around  p-1 items-center bg-green-200">
+      <div className="restraunt-list flex flex-wrap justify-around  p-1 items-center">
         { 
           (filteredRestaurants.length===0)?<h1>No Restaurants Found</h1>:
           filteredRestaurants.map((restaurant) => {
