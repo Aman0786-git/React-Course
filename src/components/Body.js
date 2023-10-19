@@ -24,7 +24,7 @@ import useOnline from "../utils/useOnline";
 
 
 
-const Body = () => {
+const Body = ({user}) => {
   const [allRestaurants,setallRestaurants] = useState([]); 
   const [filteredRestaurants,setFilteredRestaurants] = useState([]);
   // Local Variable in React
@@ -94,7 +94,7 @@ const Body = () => {
             // console.log(restaurant);
           return (  
             <Link to={"/restaurant/"+restaurant.info.id } key={restaurant.info.id} >
-            <RestaurantCard {...restaurant.info}  />
+            <RestaurantCard {...restaurant.info} user={user}  />
             </Link>
           );
         })
