@@ -692,4 +692,1702 @@ export const restaurantList=[
     },
    
   ]
-  
+export const restaurantList2=[
+  {
+    "info": {
+      "id": "355776",
+      "name": "Grameen Kulfi",
+      "cloudinaryImageId": "pj3ldvf9eyhzfsb80wfx",
+      "locality": "Mackenzie Lane",
+      "areaName": "Salkia",
+      "costForTwo": "₹120 for two",
+      "cuisines": [
+        "Ice Cream",
+        "Desserts"
+      ],
+      "avgRating": 4.7,
+      "veg": true,
+      "parentId": "12175",
+      "avgRatingString": "4.7",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 30,
+        "lastMileTravel": 1.3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "1.3 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/grameen-kulfi-mackenzie-lane-salkia-kolkata-355776",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "113305",
+      "name": "Mama Mia! - Italian Ice Creams & Cakes",
+      "cloudinaryImageId": "2a7770f90e4a76d046bfa8aa944c68b7",
+      "locality": "Dobson road",
+      "areaName": "Salkia",
+      "costForTwo": "₹250 for two",
+      "cuisines": [
+        "Ice Cream",
+        "Desserts",
+        "Bakery"
+      ],
+      "avgRating": 4.6,
+      "parentId": "471728",
+      "avgRatingString": "4.6",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 34,
+        "lastMileTravel": 2.1,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "2.1 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-14 00:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "newg.png",
+            "description": "Gourmet"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Gourmet",
+                  "imageId": "newg.png"
+                }
+              }
+            ]
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/mama-mia-italian-ice-creams-and-cakes-dobson-road-salkia-kolkata-113305",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "26515",
+      "name": "Krazy For Chocolates",
+      "cloudinaryImageId": "hyy6iofmibnnvrmhja4m",
+      "locality": "near Hanuman Mandir",
+      "areaName": "Salkia",
+      "costForTwo": "₹150 for two",
+      "cuisines": [
+        "Bakery",
+        "Desserts"
+      ],
+      "avgRating": 4.1,
+      "veg": true,
+      "parentId": "569",
+      "avgRatingString": "4.1",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 28,
+        "lastMileTravel": 1.4,
+        "serviceability": "SERVICEABLE",
+        "slaString": "25-30 mins",
+        "lastMileTravelString": "1.4 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:45:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "v1695133679/badges/Pure_Veg111.png",
+            "description": "pureveg"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "pureveg",
+                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                }
+              }
+            ]
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/krazy-for-chocolates-near-hanuman-mandir-salkia-kolkata-26515",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "27163",
+      "name": "Wow! Momo",
+      "cloudinaryImageId": "0984acc0ed7b914206dbbcb90297becc",
+      "locality": "Ac Market",
+      "areaName": "Howrah",
+      "costForTwo": "₹300 for two",
+      "cuisines": [
+        "Tibetan",
+        "Healthy Food",
+        "Asian",
+        "Chinese",
+        "Snacks",
+        "Continental",
+        "Desserts",
+        "Beverages"
+      ],
+      "avgRating": 4.2,
+      "parentId": "1776",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 35,
+        "lastMileTravel": 2,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "2.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:59:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹99"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/wow-momo-ac-market-howrah-kolkata-27163",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "305800",
+      "name": "Barbeque Nation",
+      "cloudinaryImageId": "pnoiouxy8xixdqn7troj",
+      "locality": "Park Street",
+      "areaName": "Park Street",
+      "costForTwo": "₹600 for two",
+      "cuisines": [
+        "North Indian",
+        "Barbecue",
+        "Biryani",
+        "Kebabs",
+        "Mughlai",
+        "Desserts"
+      ],
+      "avgRating": 4,
+      "parentId": "2438",
+      "avgRatingString": "4.0",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 59,
+        "lastMileTravel": 5.8,
+        "serviceability": "SERVICEABLE",
+        "slaString": "55-60 mins",
+        "lastMileTravelString": "5.8 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:30:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/barbeque-nation-park-street-kolkata-305800",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "392663",
+      "name": "Burger King",
+      "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+      "locality": "Avni Mall",
+      "areaName": "Howrah",
+      "costForTwo": "₹350 for two",
+      "cuisines": [
+        "Burgers",
+        "American"
+      ],
+      "avgRating": 4.1,
+      "parentId": "166",
+      "avgRatingString": "4.1",
+      "totalRatingsString": "5K+",
+      "sla": {
+        "deliveryTime": 55,
+        "lastMileTravel": 3.6,
+        "serviceability": "SERVICEABLE",
+        "slaString": "50-55 mins",
+        "lastMileTravelString": "3.6 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-14 01:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/burger-king-avni-mall-howrah-kolkata-392663",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "149560",
+      "name": "Pizza Hut",
+      "cloudinaryImageId": "2b4f62d606d1b2bfba9ba9e5386fabb7",
+      "locality": "Howrah",
+      "areaName": "Howrah Railway Station",
+      "costForTwo": "₹350 for two",
+      "cuisines": [
+        "Italian",
+        "Pizzas",
+        "Snacks"
+      ],
+      "avgRating": 4.1,
+      "parentId": "721",
+      "avgRatingString": "4.1",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 43,
+        "lastMileTravel": 1.4,
+        "serviceability": "SERVICEABLE",
+        "slaString": "40-45 mins",
+        "lastMileTravelString": "1.4 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "ITEMS",
+        "subHeader": "AT ₹179"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/pizza-hut-howrah-howrah-railway-station-kolkata-149560",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "110303",
+      "name": "KFC",
+      "cloudinaryImageId": "f01666ac73626461d7455d9c24005cd4",
+      "locality": "New Complex",
+      "areaName": "Howrah Railway Station",
+      "costForTwo": "₹450 for two",
+      "cuisines": [
+        "Burgers",
+        "Biryani",
+        "American",
+        "Snacks",
+        "Fast Food"
+      ],
+      "avgRating": 4.2,
+      "parentId": "547",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 43,
+        "lastMileTravel": 1.4,
+        "serviceability": "SERVICEABLE",
+        "slaString": "40-45 mins",
+        "lastMileTravelString": "1.4 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:59:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/kfc-new-complex-howrah-railway-station-kolkata-110303",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "258735",
+      "name": "McDonald's",
+      "cloudinaryImageId": "6dc3ed2ca21d71acff7c2a51dfe4c720",
+      "locality": "WB Kolkata Avani Riverside",
+      "areaName": "Shibpur",
+      "costForTwo": "₹400 for two",
+      "cuisines": [
+        "American"
+      ],
+      "avgRating": 4.2,
+      "parentId": "630",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "5K+",
+      "sla": {
+        "deliveryTime": 54,
+        "lastMileTravel": 3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "50-55 mins",
+        "lastMileTravelString": "3.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:30:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/mcdonalds-wb-avani-riverside-shibpur-kolkata-258735",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "26501",
+      "name": "Subway",
+      "cloudinaryImageId": "1ace5fa65eff3e1223feb696c956b38b",
+      "locality": "Inside Avani Mall",
+      "areaName": "Shibpur",
+      "costForTwo": "₹350 for two",
+      "cuisines": [
+        "Healthy Food",
+        "Salads",
+        "Snacks",
+        "Desserts",
+        "Beverages"
+      ],
+      "avgRating": 4.2,
+      "parentId": "2",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "5K+",
+      "sla": {
+        "deliveryTime": 47,
+        "lastMileTravel": 3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "45-50 mins",
+        "lastMileTravelString": "3.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/subway-inside-avani-mall-shibpur-kolkata-26501",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "23945",
+      "name": "Domino's Pizza",
+      "cloudinaryImageId": "rde17nnu9xcpevuynr6y",
+      "locality": "AJC Bose Road",
+      "areaName": "Taltala",
+      "costForTwo": "₹400 for two",
+      "cuisines": [
+        "Pizzas",
+        "Italian",
+        "Pastas",
+        "Desserts"
+      ],
+      "avgRating": 4.3,
+      "parentId": "2456",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 50,
+        "lastMileTravel": 5.7,
+        "serviceability": "SERVICEABLE",
+        "slaString": "50-55 mins",
+        "lastMileTravelString": "5.7 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-14 02:57:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/dominos-pizza-ajc-bose-road-taltala-kolkata-23945",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "53171",
+      "name": "Mio Amore - The Cake Shop",
+      "cloudinaryImageId": "8bf25e6cafe30c7e7c9c8f31f628fe96",
+      "areaName": "Salkia",
+      "costForTwo": "₹150 for two",
+      "cuisines": [
+        "Desserts",
+        "Bakery",
+        "Snacks"
+      ],
+      "avgRating": 4.5,
+      "parentId": "292958",
+      "avgRatingString": "4.5",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 34,
+        "lastMileTravel": 2.6,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "2.6 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 22:00:00",
+        "opened": true
+      },
+      "badges": {
+        "textExtendedBadges": [
+          {
+            "iconId": "v1704784556/Ratnesh_Badges/Listing_2x.png",
+            "shortDescription": "Perfect Cake Delivery",
+            "fontColor": "#7E808C"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "",
+                  "fontColor": "#7E808C",
+                  "iconId": "v1704784556/Ratnesh_Badges/Listing_2x.png",
+                  "shortDescription": "Perfect Cake Delivery"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/mio-amore-the-cake-shop-salkia-kolkata-53171",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "34785",
+      "name": "The Belgian Waffle Co.",
+      "cloudinaryImageId": "5116a385bac0548e06c33c08350fbf11",
+      "locality": "Allenby Road",
+      "areaName": "Bhowanipore",
+      "costForTwo": "₹200 for two",
+      "cuisines": [
+        "Waffle",
+        "Desserts",
+        "Ice Cream"
+      ],
+      "avgRating": 4.5,
+      "veg": true,
+      "parentId": "2233",
+      "avgRatingString": "4.5",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 64,
+        "lastMileTravel": 7.5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "60-65 mins",
+        "lastMileTravelString": "7.5 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-14 03:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "v1695133679/badges/Pure_Veg111.png",
+            "description": "pureveg"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "pureveg",
+                  "imageId": "v1695133679/badges/Pure_Veg111.png"
+                }
+              }
+            ]
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/the-belgian-waffle-co-allenby-road-bhowanipore-kolkata-34785",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "335340",
+      "name": "Natural Ice Cream",
+      "cloudinaryImageId": "ys8l9grmqa6jkkizmfny",
+      "locality": "Salkia Howrah",
+      "areaName": "Mali Panchghara",
+      "costForTwo": "₹150 for two",
+      "cuisines": [
+        "Ice Cream",
+        "Desserts"
+      ],
+      "avgRating": 4.4,
+      "veg": true,
+      "parentId": "2093",
+      "avgRatingString": "4.4",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 38,
+        "lastMileTravel": 2.5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "35-40 mins",
+        "lastMileTravelString": "2.5 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:59:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/natural-ice-cream-salkia-howrah-mali-panchghara-kolkata-335340",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "425816",
+      "name": "Wow! China",
+      "cloudinaryImageId": "7d46fc6e6aeda7e135d17342a6c61eb8",
+      "locality": "Shibpur",
+      "areaName": "Shibpur",
+      "costForTwo": "₹300 for two",
+      "cuisines": [
+        "Tibetan",
+        "Healthy Food",
+        "Asian",
+        "Chinese",
+        "Snacks",
+        "Continental",
+        "Desserts",
+        "Beverages"
+      ],
+      "avgRating": 4,
+      "parentId": "226836",
+      "avgRatingString": "4.0",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 57,
+        "lastMileTravel": 3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "55-60 mins",
+        "lastMileTravelString": "3.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/wow-china-shibpur-kolkata-425816",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "381202",
+      "name": "The Brooklyn Creamery - Healthy Ice Cream",
+      "cloudinaryImageId": "b1b35780a9b1dfeb26d680506d494eaa",
+      "locality": "Salkia Howrah",
+      "areaName": "Howrah",
+      "costForTwo": "₹200 for two",
+      "cuisines": [
+        "Desserts",
+        "Ice Cream",
+        "Healthy Food"
+      ],
+      "avgRating": 4.2,
+      "veg": true,
+      "parentId": "236673",
+      "avgRatingString": "4.2",
+      "totalRatingsString": "100+",
+      "sla": {
+        "deliveryTime": 43,
+        "lastMileTravel": 2.5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "40-45 mins",
+        "lastMileTravelString": "2.5 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:59:00",
+        "opened": true
+      },
+      "badges": {
+        "textExtendedBadges": [
+          {
+            "iconId": "guiltfree/GF_Logo_android_3x",
+            "shortDescription": "brand",
+            "fontColor": "#7E808C"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "",
+                  "fontColor": "#7E808C",
+                  "iconId": "guiltfree/GF_Logo_android_3x",
+                  "shortDescription": "brand"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/the-brooklyn-creamery-healthy-ice-cream-salkia-howrah-kolkata-381202",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "29706",
+      "name": "Chowman",
+      "cloudinaryImageId": "06d12ec700e4118d159fab6c3a7256dd",
+      "locality": "Ho Chi Minh Sarani",
+      "areaName": "Ho Chi Minh Sarani",
+      "costForTwo": "₹700 for two",
+      "cuisines": [
+        "Chinese",
+        "Asian",
+        "Thai",
+        "Oriental",
+        "Burmese",
+        "Tibetan"
+      ],
+      "avgRating": 4.4,
+      "parentId": "266",
+      "avgRatingString": "4.4",
+      "totalRatingsString": "10K+",
+      "sla": {
+        "deliveryTime": 58,
+        "lastMileTravel": 7.1,
+        "serviceability": "SERVICEABLE",
+        "slaString": "55-60 mins",
+        "lastMileTravelString": "7.1 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-14 02:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/chowman-ho-chi-minh-sarani-kolkata-29706",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "291934",
+      "name": "Kwality Walls Frozen Dessert and Ice Cream Shop",
+      "cloudinaryImageId": "pepu3zicldhjwutzwe1h",
+      "locality": "Howrah",
+      "areaName": "Jagacha",
+      "costForTwo": "₹300 for two",
+      "cuisines": [
+        "Desserts",
+        "Ice Cream",
+        "Ice Cream Cakes"
+      ],
+      "avgRating": 4.6,
+      "veg": true,
+      "parentId": "582",
+      "avgRatingString": "4.6",
+      "totalRatingsString": "100+",
+      "sla": {
+        "deliveryTime": 56,
+        "lastMileTravel": 6.4,
+        "serviceability": "SERVICEABLE",
+        "slaString": "55-60 mins",
+        "lastMileTravelString": "6.4 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:50:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹150 OFF",
+        "subHeader": "ABOVE ₹349",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/kwality-walls-frozen-dessert-and-ice-cream-shop-howrah-jagacha-kolkata-291934",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "164470",
+      "name": "Tea Junction",
+      "cloudinaryImageId": "77d2fffe27cd59af5045a102d08af522",
+      "locality": "Howrah",
+      "areaName": "Shibpur",
+      "costForTwo": "₹150 for two",
+      "cuisines": [
+        "Beverages",
+        "Snacks"
+      ],
+      "avgRating": 4.4,
+      "parentId": "4311",
+      "avgRatingString": "4.4",
+      "totalRatingsString": "100+",
+      "sla": {
+        "deliveryTime": 46,
+        "lastMileTravel": 3.6,
+        "serviceability": "SERVICEABLE",
+        "slaString": "45-50 mins",
+        "lastMileTravelString": "3.6 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 22:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/tea-junction-howrah-shibpur-kolkata-164470",
+      "type": "WEBLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "466935",
+      "name": "Peter Hu?",
+      "cloudinaryImageId": "oukpnymiw7gtvp44svea",
+      "locality": "Park Street",
+      "areaName": "Park Street",
+      "costForTwo": "₹1200 for two",
+      "cuisines": [
+        "Asian",
+        "Chinese",
+        "Pan-Asian",
+        "Thai",
+        "Japanese"
+      ],
+      "avgRating": 4.5,
+      "parentId": "280345",
+      "avgRatingString": "4.5",
+      "totalRatingsString": "1K+",
+      "sla": {
+        "deliveryTime": 74,
+        "lastMileTravel": 5,
+        "serviceability": "SERVICEABLE",
+        "slaString": "70-75 mins",
+        "lastMileTravelString": "5.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-01-13 23:00:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "newg.png",
+            "description": "Gourmet"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "description": "Gourmet",
+                  "imageId": "newg.png"
+                }
+              }
+            ]
+          },
+          "textBased": {
+            
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹120 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL"
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      }
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "https://www.swiggy.com/restaurants/peter-hu-park-street-kolkata-466935",
+      "type": "WEBLINK"
+    }
+  }
+]

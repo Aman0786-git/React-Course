@@ -2,23 +2,31 @@ import { Outlet } from "react-router-dom";
 import ProfileFunctionalComponent from "./Profile";
 import ProfileClass from "./ProfileClass";
 import { Component } from "react";
-
+import UserContext from "../utils/UserContext";
 class AboutUs extends Component {
   constructor(props) {
     super(props);
     // console.log("Parent-Constructor")
   }
 
-  componentDidMount(){
+  componentDidMount() {
     // Best place to make API Call
     // console.log("Parent- componentDidMount")
   }
-  
+
   render() {
     // console.log("parent-render")
     return (
       <div>
         <h1>About Us</h1>
+        <UserContext.Consumer>
+          {({ user }) => (
+            <>
+              <h1 className="text-2xl font-bold">{user.name}</h1>
+              <h1 className="text-2xl font-bold">{user.email}</h1>
+            </>
+          )}
+        </UserContext.Consumer>
         <p>This is Namaste React Live Course Chapter 9: Finding the Path </p>
         <ProfileFunctionalComponent name={"AmanFunctional"} />
         {/* <ProfileClass name={"First Child"} xyz={"xyz"} /> */}

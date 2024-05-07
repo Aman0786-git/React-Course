@@ -1,4 +1,4 @@
-import React,{lazy, Suspense} from "react";
+import React, { lazy, Suspense, useState } from "react";
 import ReactDOM from "react-dom/client";
 import "../index.css";
 import Header from "./components/Header";
@@ -10,14 +10,15 @@ import Contact from "./components/contact";
 import RestrauntMenu from "./components/RestaurantMenu";
 // import Profile from "./components/Profile";
 import Profile from "./components/ProfileClass";
-import { createBrowserRouter,RouterProvider,Outlet } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Shimmer from "./components/shimmer";
+import UserContext from "./utils/UserContext";
 // import Instamart from "./components/Instamart";
 
 //Lazy Load or Chunking or Dynamic Import
-const Instamart = lazy(()=>import("./components/Instamart"));
-// upon on demand loading -> upon render -> react suspends loading 
-// we use suspense to show fallback component until the component is loaded 
+const Instamart = lazy(() => import("./components/Instamart"));
+// upon on demand loading -> upon render -> react suspends loading
+// we use suspense to show fallback component until the component is loaded
 
 //default Export
 // import Header from "./components/Header"
@@ -45,71 +46,85 @@ const Instamart = lazy(()=>import("./components/Instamart"));
 
 */
 
-// Chunking -> Code Splitting -> Lazy Loading -> Dynamic Import 
-// What is Chunking? -> Divide the code into small chunks and load only when required 
+// Chunking -> Code Splitting -> Lazy Loading -> Dynamic Import
+// What is Chunking? -> Divide the code into small chunks and load only when required
 // Why Chunking? -> To improve the performance of the application
 // How Chunking? -> Dynamic Import
-// What is dynamic import? -> import the module when required 
+// What is dynamic import? -> import the module when required
 
-
-// never create component inside component 
+// never create component inside component
 // never create useState inside if else or for loop or outside functional component
 const AppLayout = () => {
+  const [user, setUser] = React.useState({
+    name: "Md Amanullah",
+    email: "aman999.au@gmail.com",
+  });
+
   return (
     // <React.Fragment>
-      <>
-      <Header />
-      {/* {Outlet} */}
-      <Outlet/>
-      <Footer />
-      </>
+    <>
+      <UserContext.Provider value={{ user: user, setUser: setUser }}>
+        <Header />
+        <Outlet />
+        <Footer />
+      </UserContext.Provider>
+    </>
     // </React.Fragment>
   );
 };
 
-
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element : <AppLayout />,
-    errorElement:<Error/>,
-    children:[
+    element: <AppLayout />,
+    errorElement: <Error />,
+    children: [
       {
         path: "/",
-        element : <Body user={
-         { name:"Food Panda",
-          email:"mail@foodpanda.com"}
-        }/>
+        element: (
+          <Body user={{ name: "Food Panda", email: "mail@foodpanda.com" }} />
+        ),
       },
       {
         path: "/about",
-        element : <AboutUs />,
-        children:[
+        element: <AboutUs />,
+        children: [
           {
-            path:"profile", // parentpath/{path} => localhost:1234/about/profile
-            element: <Profile/>   
-          }
-        ]
+            path: "profile", // parentpath/{path} => localhost:1234/about/profile
+            element: <Profile />,
+          },
+        ],
       },
       {
-        path :"/contact",
-        element : <Contact />
+        path: "/contact",
+        element: <Contact />,
       },
       {
-        path:"/restaurant/:id",
-        element : <RestrauntMenu />
+        path: "/restaurant/:id",
+        element: <RestrauntMenu />,
       },
       {
-        path:"/instamart",
-        element :<Suspense fallback={<Shimmer />}> 
-                  <Instamart />
-                </Suspense> 
-      }
-    ]
+        path: "/instamart",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Instamart />
+          </Suspense>
+        ),
+      },
+    ],
   },
-  
 ]);
 
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={appRouter}/>);
+root.render(<RouterProvider router={appRouter} />);
+
+/* 
+Props Drilling -> passing props from parent to child to child to child
+
+App Layout
+  (state=user)
+    - <Body user={user}/>
+      - <RestaurantCard user={user}/>
+        - <h4>{user.name}</h4>
+
+*/
