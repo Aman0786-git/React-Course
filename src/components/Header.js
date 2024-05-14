@@ -3,6 +3,7 @@ import Logo from "../assets/img/logo.jpg";
 import { Link } from "react-router-dom";
 import MobileHamb from "./MobileHamb";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 // SPA - Single Page Application
 // Routing is of two types: 1. Client Side Routing 2. Server Side Routing
@@ -18,6 +19,8 @@ const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const { user } = useContext(UserContext);
 
+  const cartItems = useSelector((store) => store.cart.items);
+  // console.log(cartItems);
   return (
     <div className="w-full md:flex md:justify-between ">
       <Title />
@@ -34,10 +37,10 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
           </li>
           <li className="m-2 hover:text-white">
-            <Link to="/cart">Cart</Link>
+            <Link to="/instamart">Instamart</Link>
           </li>
           <li className="m-2 hover:text-white">
-            <Link to="/instamart">Instamart</Link>
+            <Link to="/cart">Cart- {cartItems.length} items</Link>
           </li>
         </ul>
       </div>

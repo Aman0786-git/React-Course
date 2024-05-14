@@ -13,8 +13,9 @@ import Profile from "./components/ProfileClass";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Shimmer from "./components/shimmer";
 import UserContext from "./utils/UserContext";
-// import Instamart from "./components/Instamart";
-
+import { Provider } from "react-redux";
+import store from "./utils/store";
+import Cart from "./components/Cart";
 //Lazy Load or Chunking or Dynamic Import
 const Instamart = lazy(() => import("./components/Instamart"));
 // upon on demand loading -> upon render -> react suspends loading
@@ -62,13 +63,13 @@ const AppLayout = () => {
 
   return (
     // <React.Fragment>
-    <>
+    <Provider store={store}>
       <UserContext.Provider value={{ user: user, setUser: setUser }}>
         <Header />
         <Outlet />
         <Footer />
       </UserContext.Provider>
-    </>
+    </Provider>
     // </React.Fragment>
   );
 };
@@ -108,6 +109,14 @@ const appRouter = createBrowserRouter([
         element: (
           <Suspense fallback={<Shimmer />}>
             <Instamart />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/cart",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Cart />
           </Suspense>
         ),
       },

@@ -8,13 +8,12 @@ import useRestaurant from "../utils/useRestaurant";
 const RestrauntMenu = () => {
   //  how to read a dynamic URL parameter/id
   const { id } = useParams();
-  // console.log(id);
   /* const [restaurant, setRestaurant] = useState({});
   const [menu, setMenu] = useState({}); */
-   
-  const val= useRestaurant(id);
-  const {restaurant,menu}=val;
 
+  const val = useRestaurant(id);
+  const { restaurant, menu } = val;
+  // console.log(val);
   /* useEffect(() => {
     getRestaurantInfo();
   }, []);
@@ -31,11 +30,13 @@ const RestrauntMenu = () => {
     setRestaurant(jsonData.cards[0].card.card.info);
     setMenu(jsonData.cards[2].groupedCard.cardGroupMap.REGULAR.cards);
   } */
-//   console.log("Menu",menu)
-//   console.log(restaurant);
+  //   console.log("Menu",menu)
+  //   console.log(restaurant);
   return (
-
-    <div className="menuContainer flex flex-wrap justify-center" key={restaurant.id}>
+    <div
+      className="menuContainer flex flex-wrap justify-center"
+      key={restaurant.id}
+    >
       <div className="resInfo my-2 py-2 bg-green-200 w-full text-center">
         <h2 className="resName font-bold text-lg">
           {restaurant?.name},{restaurant?.city}
@@ -48,11 +49,11 @@ const RestrauntMenu = () => {
       </div>
 
       <div className="menuList flex justify-evenly flex-wrap">
-        {menu.length === undefined ? 
+        {menu.length === undefined ? (
           <h1>Loading...</h1>
-        : (
+        ) : (
           menu.map((item) => {
-            const cardItem = item?.card?.card?.itemCards ;
+            const cardItem = item?.card?.card?.itemCards;
             return cardItem?.map((e) => {
               const cardInfo = e?.card?.info;
               // console.log(cardInfo)

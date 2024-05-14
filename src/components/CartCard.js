@@ -1,8 +1,8 @@
 import { IMG_CDN_URL } from "../config";
-import { addItem } from "../utils/cartSlice";
+import { removeItem } from "../utils/cartSlice";
 import { useDispatch } from "react-redux";
 
-const MenuCard = ({
+const CartCard = ({
   id,
   name,
   imageId,
@@ -11,19 +11,19 @@ const MenuCard = ({
   ratings,
   defaultPrice,
 }) => {
-  const { rating } = ratings.aggregatedRating;
+  //   const { rating } = ratings.aggregatedRating;
   const item = {
     id,
     name,
     imageId,
     isVeg,
-    price: price / 100,
-    rating,
+    price,
+    // rating,
     defaultPrice,
   };
   const dispatch = useDispatch();
-  const addFoodItem = (item) => {
-    dispatch(addItem(item));
+  const remFoodItem = (item) => {
+    dispatch(removeItem(item));
   };
   return (
     <div key={id} className="menu_Card  m-2 inline-flex  ">
@@ -41,16 +41,16 @@ const MenuCard = ({
         <h4 className="font-semibold text-sm">
           ₹{(price ? price : defaultPrice) / 100}
         </h4>
-        <h4>{rating ? rating : "N/A"}⭐</h4>
+        {/* <h4>{rating ? rating : "N/A"}⭐</h4> */}
         <button
           className="mt-2 orderBtn bg-green-600 text-white font-semibold p-2 rounded-lg hover:bg-green-800"
-          onClick={() => addFoodItem(item)}
+          onClick={() => remFoodItem(item)}
         >
-          Add
+          Remove
         </button>
       </div>
     </div>
   );
 };
 
-export default MenuCard;
+export default CartCard;

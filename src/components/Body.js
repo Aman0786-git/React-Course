@@ -60,6 +60,10 @@ const Body = () => {
     if (
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     ) {
+      console.log(
+        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants
+      );
       setallRestaurants(
         json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants
       );
