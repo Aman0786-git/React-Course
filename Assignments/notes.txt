@@ -1,0 +1,37 @@
+React Testing Library
+ -It helps in maintailability
+ -It helps in writing tests that are closer to how users use the application
+ -It helps in writing tests that are more resilient to changes in the component
+
+
+## Jest
+    -Jest is a test runner
+    -Jest is a test framework
+    -Jest is a code coverage tool
+
+# headless browser
+    -A headless browser is a web browser without a graphical user interface.
+    -Headless browsers provide automated control of a web page in an environment similar to popular web browsers, but are executed via a command-line interface or using network communication.
+
+//Different types of Testing
+    - Manaual Testing
+    - Automation Testing
+        -Selenium
+    - End-to-End Testing (Covers Entire User Journey)
+        -Cypress
+        -Puppeteer
+    - Unit Testing (Covers Individual Units of Code)
+        -Jest
+        -React Testing Library
+    -Integration Testing (Covers Interaction Between Different Units of Code)
+        
+///////////
+-Install React Testing Library
+-Install Jest
+-Configure Jest
+ -use npx init --jest to create jest.config.js file
+ -Select the environment
+    -Select jsdom(browser-like)
+-Create my first test
+-Configure babel
+
