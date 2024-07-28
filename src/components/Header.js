@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import Logo from "../assets/img/logo.jpg";
+import Logo from "../assets/img/logo.png";
 import { Link } from "react-router-dom";
 import MobileHamb from "./MobileHamb";
 import UserContext from "../utils/UserContext";
@@ -11,7 +11,12 @@ import { useSelector } from "react-redux";
 
 const Title = () => (
   <a href="/" className="flex justify-center ">
-    <img className="w-20 h-12 md:h-12" alt="logo" src={Logo} />
+    <img
+      data-testid="logo"
+      className="w-20 h-12 md:h-12"
+      alt="logo"
+      src={Logo}
+    />
   </a>
 );
 
@@ -40,7 +45,9 @@ const Header = () => {
             <Link to="/instamart">Instamart</Link>
           </li>
           <li className="m-2 hover:text-white">
-            <Link to="/cart">Cart- {cartItems.length} items</Link>
+            <Link to="/cart" data-testid="cart">
+              Cart- {cartItems.length} items
+            </Link>
           </li>
         </ul>
       </div>

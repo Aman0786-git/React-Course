@@ -18,7 +18,7 @@ const RestaurantCard = ({
         src={IMG_CDN_URL + cloudinaryImageId}
       />
       <h3 className="font-semibold text-lg md:text-xl mt-1">{name}</h3>
-      <p className="font-medium text-sm">{...cuisines.slice(0, 2).join(",")}</p>
+      <p className="font-medium text-sm">{cuisines.slice(0, 2).join(",")}</p>
       <h5>{avgRating === "--" ? "NA " : avgRating}⭐</h5>
       {/* <h5>{user.name}</h5> */}
     </div>

@@ -43,6 +43,9 @@ const Body = () => {
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.5830002&lng=88.3372909&page_type=DESKTOP_WEB_LISTING"
     );
+    // const data = await fetch(
+    //   "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.653564&lng=88.4450847&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    // );
     const json = await data.json();
     // console.log(typeof json);
     // console.log(
@@ -60,12 +63,13 @@ const Body = () => {
     if (
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     ) {
-      console.log(
+      // console.log(
+      //   json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+      //     ?.restaurants
+      // );
+      setallRestaurants(
         json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
-      );
-      setallRestaurants(
-        json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants
       );
       setFilteredRestaurants(
         json?.data?.cards[2].card.card.gridElements.infoWithStyle.restaurants
@@ -103,6 +107,7 @@ const Body = () => {
           onChange={(e) => setSearchText(e.target.value)}
         />
         <button
+          data-testid="search-btn"
           className="search-btn m-2 px-3 py-0.5 w-xl rounded-full border-2 border-green-400 bg-green-300"
           onClick={() => {
             // need to filter the data
@@ -125,7 +130,7 @@ const Body = () => {
           <h1>No Restaurants Found</h1>
         ) : (
           filteredRestaurants.map((restaurant) => {
-            // console.log(restaurant);
+            console.log(restaurant);
             return (
               <Link
                 to={"/restaurant/" + restaurant.info.id}

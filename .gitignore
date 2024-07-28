@@ -2,3 +2,6 @@
 .babelrc
 .parcel-cache
 dist
+
+/coverage
+/Assignments
